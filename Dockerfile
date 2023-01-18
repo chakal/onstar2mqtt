@@ -9,4 +9,6 @@ RUN npm ci --omit=dev --no-fund
 
 COPY ["src", "/app/src"]
 
-ENTRYPOINT ["npm", "run", "start"]
+ENTRYPOINT npm i https://github.com/chakal/OnStarJS/ && npm run start
+
+#ENTRYPOINT ["npm", "run", "start"]
